@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-
-[System.Serializable]
+﻿[System.Serializable]
 public class BeatInput
 {
     public enum ActionType { Down, Up };

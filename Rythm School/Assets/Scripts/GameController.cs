@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using System.IO;
 
 /*
@@ -12,7 +11,7 @@ public class GameController : MonoBehaviour
     public AudioClip Clip;
     public string FileName;
 
-    static GameController gameController;
+    public static GameController gameController;
 
     private AudioSource audioSource;
     private MusicData musicData;
@@ -69,12 +68,14 @@ public class GameController : MonoBehaviour
         bool ok = true;
         bool hit = false;
 
-        if (time < musicData.ActionTime())
+        float offsettedTime = time - startingTimer;
+
+        if (offsettedTime < musicData.ActionTime())
         {
             return MusicData.Check.Idle;
         }
 
-        if (time < musicData.OkTime())
+        if (offsettedTime < musicData.OkTime())
         {
             return HaveFailed();
         }

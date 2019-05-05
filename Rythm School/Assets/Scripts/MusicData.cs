@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-
-[System.Serializable]
+﻿[System.Serializable]
 public class MusicData
 {
     public enum Check { Idle, Fail, Ok };
@@ -36,7 +33,7 @@ public class MusicData
 
     public float OkTime()
     {
-        return GetCurrent().Timer - superMargin;
+        return GetCurrent().Timer - margin;
     }
 
     public float FailTime()
