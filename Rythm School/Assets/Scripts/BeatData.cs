@@ -3,5 +3,5 @@ public class BeatData
 {
     public float Timer;
     public BeatInput[] Inputs;
-    public StateMachine stateMachine;
+    public StateMachine[] stateMachines;
 }
