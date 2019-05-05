@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44a4c8cd284bd44b0ad96e372659e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clip: {fileID: 0}
+  Clip: {fileID: 8300000, guid: 1d022e05f429671499d67f7876dd3cc2, type: 3}
   FileName: level2.json
 --- !u!82 &2067105711
 AudioSource:

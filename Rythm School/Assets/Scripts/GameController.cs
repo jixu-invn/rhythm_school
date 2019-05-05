@@ -83,15 +83,19 @@ public class GameController : MonoBehaviour
         {
             if (bi.GetfDone() == false)
             {
-                if (bi.Action == i.Action && bi.actionType == i.actionType)
+                if (!(i.actionType == BeatInput.ActionType.Up && bi.actionType == BeatInput.ActionType.Down))
                 {
-                    bi.Done();
-                    hit = true;
+                    if (bi.Action == i.Action && bi.actionType == i.actionType)
+                    {
+                        bi.Done();
+                        hit = true;
+                    }
+                    else
+                    {
+                        ok = false;
+                    }
                 }
-                else
-                {
-                    ok = false;   
-                }
+                
             }
         }
 
@@ -147,7 +151,7 @@ public class GameController : MonoBehaviour
     {
         audioSource.Play();
         startingTimer = Time.timeSinceLevelLoad;
-        isPlaying = true;
+        //isPlaying = true;
     }
 
     private void LoadData()

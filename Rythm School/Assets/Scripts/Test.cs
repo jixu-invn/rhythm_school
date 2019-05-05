@@ -18,7 +18,15 @@ public class Test : MonoBehaviour
             Event e = Event.current;
             if (e.isKey && e.type == EventType.KeyDown && e.keyCode != KeyCode.None)
             {
-                Debug.Log("k = " + e.keyCode);
+                Debug.Log("Down = " + e.keyCode + " || time = " + Time.timeSinceLevelLoad);
+            }
+        }
+        else
+        {
+            Event e = Event.current;
+            if (e.isKey && e.type == EventType.KeyUp && e.keyCode != KeyCode.None)
+            {
+                Debug.Log("Up = " + e.keyCode + " || time = " + Time.timeSinceLevelLoad);
             }
         }
     }
