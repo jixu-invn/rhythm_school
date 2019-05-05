@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 
 /*
@@ -9,7 +10,6 @@ using System.IO;
 public class GameController : MonoBehaviour
 {
     public AudioClip Clip;
-    public string FileName;
 
     public static GameController gameController;
 
@@ -152,19 +152,20 @@ public class GameController : MonoBehaviour
     {
         audioSource.Play();
         startingTimer = Time.timeSinceLevelLoad;
-        //isPlaying = true;
+        isPlaying = true;
     }
 
     private void LoadData()
     {
+        string FileName = SceneManager.GetActiveScene().name + ".json";
         string DataPath = Path.Combine(Application.streamingAssetsPath, FileName);
 
         Debug.Log(DataPath);
-
+        
         if (File.Exists(DataPath))
         {
-            Debug.Log("Indeed, this file does exist");
-            //load data
+            string DataAsJson = File.ReadAllText(DataPath);
+            musicData = JsonUtility.FromJson<MusicData>(DataAsJson);
         }
         else
         {

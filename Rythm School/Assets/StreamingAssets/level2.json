@@ -1,0 +1,1 @@
+{"margin":0.05000000074505806,"superMargin":0.24300000071525575,"Beats":[{"Timer":0.5,"Inputs":[{"Action":0,"actionType":0}],"NextAnimation":0},{"Timer":1.0,"Inputs":[{"Action":0,"actionType":1}],"NextAnimation":0},{"Timer":1.5,"Inputs":[{"Action":1,"actionType":0}],"NextAnimation":0}],"Mappers":[{"input":98,"action":0},{"input":99,"action":1}]}

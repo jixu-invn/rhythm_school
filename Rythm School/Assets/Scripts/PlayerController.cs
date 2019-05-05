@@ -28,12 +28,12 @@ public class PlayerController : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        gameController = GameController.gameController;
     }
 
     private void Start()
-    {
-        // Both will be pulled from an other script
+    { 
+        gameController = GameController.gameController;
+      
         score = 0;
         groove = 1;
     }
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
                 check = gameController.CheckInput(e.keyCode, false, Time.timeSinceLevelLoad);
             }
         }
-        
+
         score += check == MusicData.Check.Ok ? 1 : 0;
     }
 }
