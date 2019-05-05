@@ -57,9 +57,11 @@ public class GameController : MonoBehaviour
 
     private void CheckBeat()
     {
-        if (Time.timeSinceLevelLoad - startingTimer > musicData.FailTime())
+        float time = Time.timeSinceLevelLoad - startingTimer;
+
+        if (time > musicData.FailTime())
         {
-            HaveFailed();
+            HaveFailed(time);
         }
     }
 
@@ -77,7 +79,7 @@ public class GameController : MonoBehaviour
 
         if (offsettedTime < musicData.OkTime())
         {
-            return HaveFailed();
+            return HaveFailed(time);
         }
 
         foreach(BeatInput bi in musicData.GetCurrent().Inputs)
@@ -100,22 +102,25 @@ public class GameController : MonoBehaviour
             }
         }
 
-        return ok ? HaveOk() : (hit ? MusicData.Check.Idle : HaveFailed());
+        return ok ? HaveOk(time) : (hit ? MusicData.Check.Idle : HaveFailed(time));
     }
 
     public MusicData.Check CheckInput(KeyCode k, bool downed, float time)
     {
-        foreach(Mapper m in musicData.Mappers)
+        if (isPlaying)
         {
-            if (m.input == k)
+            foreach (Mapper m in musicData.Mappers)
             {
-                BeatInput input = new BeatInput
+                if (m.input == k)
                 {
-                    Action = m.action,
-                    actionType = downed ? BeatInput.ActionType.Down : BeatInput.ActionType.Up
-                };
+                    BeatInput input = new BeatInput
+                    {
+                        Action = m.action,
+                        actionType = downed ? BeatInput.ActionType.Down : BeatInput.ActionType.Up
+                    };
 
-                return CheckAction(input, time);
+                    return CheckAction(input, time);
+                }
             }
         }
 
@@ -134,17 +139,23 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private MusicData.Check HaveFailed()
+    private MusicData.Check HaveFailed(float time)
     {
+        Debug.Log("Fail : " + musicData.GetCurrent().Timer + " => " + time);
+
         goNext();
         //play fail animation
+
         return MusicData.Check.Fail;
     }
 
-    private MusicData.Check HaveOk()
+    private MusicData.Check HaveOk(float time)
     {
+        Debug.Log("Ok : " + musicData.GetCurrent().Timer + " => " + time);
+
         goNext();
         //play animation
+
         return MusicData.Check.Ok;
     }
     

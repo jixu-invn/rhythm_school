@@ -228,8 +228,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269207865}
-  - component: {fileID: 269207867}
+  - component: {fileID: 269207869}
   - component: {fileID: 269207866}
+  - component: {fileID: 269207868}
   m_Layer: 0
   m_Name: Potion1
   m_TagString: Untagged
@@ -299,7 +300,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &269207867
+--- !u!114 &269207868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269207864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a11538b4b377394b8bd545e331e2a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &269207869
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -661,7 +674,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1d022e05f429671499d67f7876dd3cc2, type: 3}
-  FileName: level2.json
 --- !u!82 &2067105711
 AudioSource:
   m_ObjectHideFlags: 0

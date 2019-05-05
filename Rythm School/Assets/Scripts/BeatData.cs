@@ -3,5 +3,6 @@ public class BeatData
 {
     public float Timer;
     public BeatInput[] Inputs;
-    public int NextAnimation;
+    public int StateMachineNumber;
+    public int StateMachineValue;
 }

@@ -8,6 +8,7 @@ public class MusicDataEditor : EditorWindow
     public MusicData musicData;
 
     private string dataPath = "/StreamingAssets";
+    private Vector2 scrollPos;
 
     [MenuItem("Window/Music Data Editor")]
     static void Init()
@@ -18,6 +19,8 @@ public class MusicDataEditor : EditorWindow
 
     private void OnGUI()
     {
+        EditorGUILayout.BeginVertical();
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
         if (musicData != null)
         {
             SerializedObject serializedObject = new SerializedObject(this);
@@ -37,6 +40,8 @@ public class MusicDataEditor : EditorWindow
         {
             LoadMusicData();
         }
+        EditorGUILayout.EndScrollView();
+        EditorGUILayout.EndVertical();
     }
 
     private void LoadMusicData()
