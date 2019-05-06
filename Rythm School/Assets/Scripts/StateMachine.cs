@@ -6,5 +6,15 @@ public class StateMachine
     public int StateMachineNumber;
     public int StateMachineType;
     public int StateMachineValue;
-    public StateMachine.Check check = StateMachine.Check.Idle;
+    private StateMachine.Check check = StateMachine.Check.Idle;
+
+    public void SetFail()
+    {
+        check = StateMachine.Check.Fail;
+    }
+
+    public void SetOk()
+    {
+        check = StateMachine.Check.Ok;
+    }
 }
