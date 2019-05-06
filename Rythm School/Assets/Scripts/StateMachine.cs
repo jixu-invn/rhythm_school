@@ -4,8 +4,7 @@ public class StateMachine
     public enum Check { Idle, Fail, Ok };
 
     public int Number;
-    public int Type;
-    public int Value;
+    public string Name;
     public bool LastAnimation = false;
     private StateMachine.Check check = StateMachine.Check.Idle;
 

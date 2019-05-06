@@ -35,7 +35,15 @@ public class Test : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            animator.SetTrigger("Pushed");
+            animator.Play("Potion1");
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            animator.Play("Potion1_test");
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            animator.SetTrigger("LastAnimation");
         }
     }
 }

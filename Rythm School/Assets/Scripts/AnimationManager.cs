@@ -2,19 +2,12 @@
 
 public class AnimationManager : MonoBehaviour
 {
-    private class AnimationState
-    {
-        public int Type;
-        public int Value;
-        public bool Fail;
-        public bool Ok;
-    }
-
     public static AnimationManager animationManager;
 
     public AnimationMapper[] animationMappers;
+    public string[] TypeCodes;
 
-    private AnimationState old;
+    private bool[] initialised;
 
     private void Awake()
     {
@@ -30,7 +23,14 @@ public class AnimationManager : MonoBehaviour
             }
         }
 
-        old = new AnimationState();
+        initialised = new bool[animationMappers.Length];
+
+        int i = 0;
+
+        for (i = 0; i < initialised.Length; i++)
+        {
+            initialised[i] = false;
+        }
     }
 
     public void Init(StateMachine stateMachine)
@@ -41,7 +41,26 @@ public class AnimationManager : MonoBehaviour
             return;
         }
 
-        animationMappers[stateMachine.Number].animator.SetInteger("Type", stateMachine.Type);
+        if (TypeCodes.Length > 0 && initialised[stateMachine.Number] == false)
+        {
+            string type = stateMachine.Name.Substring(0, TypeCodes[0].Length);
+
+            bool found = false;
+
+            foreach (string s in TypeCodes)
+            {
+                if (s.Equals(type))
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (found)
+                animationMappers[stateMachine.Number].animator.Play(type);
+
+            initialised[stateMachine.Number] = true;
+        }
     }
 
     public void Play(StateMachine stateMachine)
@@ -52,56 +71,28 @@ public class AnimationManager : MonoBehaviour
             return;
         }
 
-        SaveOld(stateMachine.Number);
-
-        AnimationState toPlay = new AnimationState
-        {
-            Type = stateMachine.Type,
-            Value = stateMachine.Value,
-            Fail = stateMachine.GetCheck() == StateMachine.Check.Fail ? true : false,
-            Ok = stateMachine.GetCheck() == StateMachine.Check.Ok ? true : false
-        };
-
-        SetAnimationState(stateMachine.Number, toPlay);
-
+        Animator animator = animationMappers[stateMachine.Number].animator;
+        
         if (stateMachine.LastAnimation)
-            Reset(stateMachine.Number);
-        else
-            Undo(stateMachine.Number);
-    }
+        {
+            animator.SetTrigger("LastAnimation");
+            initialised[stateMachine.Number] = false;
+        }
 
-    private void SaveOld(int stateMachineNumber)
-    {
-        Animator animator = animationMappers[stateMachineNumber].animator;
+        string code = "";
 
-        old.Type = animator.GetInteger("Type");
-        old.Value = animator.GetInteger("Value");
-        old.Fail = animator.GetBool("Fail");
-        old.Ok = animator.GetBool("Ok");
-    }
+        switch (stateMachine.GetCheck())
+        {
+            case StateMachine.Check.Fail:
+                code = "_Fail";
+                break;
+            case StateMachine.Check.Ok:
+                code = "_Ok";
+                break;
+        }
 
-    private void SetAnimationState(int stateMachineNumber, AnimationState animationState)
-    {
-        Animator animator = animationMappers[stateMachineNumber].animator;
+        string stateName = stateMachine.Name + code;
 
-        animator.SetInteger("Type", animationState.Type);
-        animator.SetInteger("Value", animationState.Value);
-        animator.SetBool("Fail", animationState.Fail);
-        animator.SetBool("Ok", animationState.Ok);
-    }
-
-    private void Undo(int stateMachineNumber)
-    {
-        SetAnimationState(stateMachineNumber, old);
-    }
-
-    private void Reset(int stateMachineNumber)
-    {
-        Animator animator = animationMappers[stateMachineNumber].animator;
-
-        animator.SetInteger("Type", 0);
-        animator.SetInteger("Value", 0);
-        animator.SetBool("Fail", false);
-        animator.SetBool("Ok", true);
+        animator.Play(stateName);
     }
 }
