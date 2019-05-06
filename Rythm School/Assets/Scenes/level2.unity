@@ -316,7 +316,7 @@ MonoBehaviour:
   animationMappers:
   - stateMachineNumber: 0
     animator: {fileID: 269207869}
-  TypeCodes: []
+    TypeCodes: []
 --- !u!114 &269207868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,7 +705,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationMappers: []
-  TypeCodes: []
 --- !u!82 &2067105712
 AudioSource:
   m_ObjectHideFlags: 0

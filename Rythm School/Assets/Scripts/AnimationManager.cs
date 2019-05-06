@@ -31,7 +31,7 @@ public class AnimationManager : MonoBehaviour
 
         if (animationMappers[stateMachine.Number].TypeCodes.Length > 0)
         {
-            string type = stateMachine.Name.Substring(0, animationMappers[stateMachine.Number].TypeCodes[0].Length);
+            string type = stateMachine.Name.Substring(0, stateMachine.Name.IndexOf('_'));
 
             bool found = false;
 
@@ -45,7 +45,11 @@ public class AnimationManager : MonoBehaviour
             }
 
             if (found)
-                animationMappers[stateMachine.Number].animator.Play(type);
+            {
+                string nameState = type + "_Idle";
+
+                animationMappers[stateMachine.Number].animator.Play(nameState);
+            }
         }
     }
 
