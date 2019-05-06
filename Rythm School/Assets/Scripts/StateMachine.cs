@@ -5,6 +5,7 @@ public class StateMachine
 
     public int Number;
     public string Name;
+    public bool NeedInit = false;
     public bool LastAnimation = false;
     private StateMachine.Check check = StateMachine.Check.Idle;
 

@@ -138,7 +138,10 @@ public class GameController : MonoBehaviour
         {
             musicData.Next();
             foreach (StateMachine s in musicData.GetCurrent().stateMachines)
-                animationManager.Init(s);
+            {
+                if (s.NeedInit)
+                    animationManager.Init(s);
+            }
         }
         else
         {
