@@ -6,17 +6,19 @@ using System.IO;
  * Manage the game engine
  */
 
-[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(AudioSource),typeof(AnimationManager))]
 public class GameController : MonoBehaviour
 {
-    public AudioClip Clip;
-
     public static GameController gameController;
+
+    public AudioClip Clip;
 
     private AudioSource audioSource;
     private MusicData musicData;
     private float startingTimer = -1;
     private bool isPlaying = false;
+
+    private AnimationManager animationManager;
 
     private void Awake()
     {
@@ -43,6 +45,9 @@ public class GameController : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = Clip;
+
+        animationManager = AnimationManager.animationManager;
+
         LoadData();
         StartLevel();
     }
@@ -52,16 +57,6 @@ public class GameController : MonoBehaviour
         if (isPlaying)
         {
             CheckBeat();
-        }
-    }
-
-    private void CheckBeat()
-    {
-        float time = Time.timeSinceLevelLoad - startingTimer;
-
-        if (time > musicData.FailTime())
-        {
-            HaveFailed(time);
         }
     }
 
@@ -127,11 +122,23 @@ public class GameController : MonoBehaviour
         return MusicData.Check.Idle;
     }
 
+    private void CheckBeat()
+    {
+        float time = Time.timeSinceLevelLoad - startingTimer;
+
+        if (time > musicData.FailTime())
+        {
+            HaveFailed(time);
+        }
+    }
+
     private void goNext()
     {
         if (musicData.GetCurrent() != musicData.End())
         {
             musicData.Next();
+            foreach (StateMachine s in musicData.GetCurrent().stateMachines)
+                animationManager.Init(s);
         }
         else
         {
@@ -142,9 +149,14 @@ public class GameController : MonoBehaviour
     private MusicData.Check HaveFailed(float time)
     {
         Debug.Log("Fail : " + musicData.GetCurrent().Timer + " => " + time);
+        
+        foreach(StateMachine s in musicData.GetCurrent().stateMachines)
+        {
+            s.SetFail();
+            animationManager.Play(s);
+        }
 
         goNext();
-        //play fail animation
 
         return MusicData.Check.Fail;
     }
@@ -152,9 +164,14 @@ public class GameController : MonoBehaviour
     private MusicData.Check HaveOk(float time)
     {
         Debug.Log("Ok : " + musicData.GetCurrent().Timer + " => " + time);
+        
+        foreach (StateMachine s in musicData.GetCurrent().stateMachines)
+        {
+            s.SetOk();
+            animationManager.Play(s);
+        }
 
         goNext();
-        //play animation
 
         return MusicData.Check.Ok;
     }

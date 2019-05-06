@@ -3,10 +3,15 @@ public class StateMachine
 {
     public enum Check { Idle, Fail, Ok };
 
-    public int StateMachineNumber;
-    public int StateMachineType;
-    public int StateMachineValue;
+    public int Number;
+    public int Type;
+    public int Value;
     private StateMachine.Check check = StateMachine.Check.Idle;
+
+    public StateMachine.Check GetCheck()
+    {
+        return check;
+    }
 
     public void SetFail()
     {

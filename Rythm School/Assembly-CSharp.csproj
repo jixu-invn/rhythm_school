@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AnimationManager.cs" />
+    <Compile Include="Assets\Scripts\AnimationMapper.cs" />
     <Compile Include="Assets\Scripts\BeatData.cs" />
     <Compile Include="Assets\Scripts\BeatInput.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
