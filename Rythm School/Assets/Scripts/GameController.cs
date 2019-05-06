@@ -181,8 +181,8 @@ public class GameController : MonoBehaviour
     
     private void StartLevel()
     {
-        audioSource.Play();
-        startingTimer = Time.timeSinceLevelLoad;
+        startingTimer = Time.timeSinceLevelLoad+4;
+        audioSource.PlayDelayed(4);
         isPlaying = true;
     }
 
