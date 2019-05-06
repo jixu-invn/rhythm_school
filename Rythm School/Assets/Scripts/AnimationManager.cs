@@ -64,7 +64,10 @@ public class AnimationManager : MonoBehaviour
 
         SetAnimationState(stateMachine.Number, toPlay);
 
-        Reset(stateMachine.Number);
+        if (stateMachine.LastAnimation)
+            Reset(stateMachine.Number);
+        else
+            Undo(stateMachine.Number);
     }
 
     private void SaveOld(int stateMachineNumber)
@@ -87,8 +90,18 @@ public class AnimationManager : MonoBehaviour
         animator.SetBool("Ok", animationState.Ok);
     }
 
-    private void Reset(int stateMachineNumber)
+    private void Undo(int stateMachineNumber)
     {
         SetAnimationState(stateMachineNumber, old);
+    }
+
+    private void Reset(int stateMachineNumber)
+    {
+        Animator animator = animationMappers[stateMachineNumber].animator;
+
+        animator.SetInteger("Type", 0);
+        animator.SetInteger("Value", 0);
+        animator.SetBool("Fail", false);
+        animator.SetBool("Ok", true);
     }
 }
