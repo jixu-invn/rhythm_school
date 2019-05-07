@@ -128,6 +128,12 @@ public class GameController : MonoBehaviour
 
         if (time > musicData.FailTime())
         {
+            Debug.Log("Index = " + musicData.GetIndex());
+            foreach (StateMachine state in musicData.GetCurrent().stateMachines)
+            {
+                Debug.Log("StateMachine = " + state.Number + " || animation = " + state.Name);
+            }
+
             HaveFailed(time);
         }
     }
@@ -151,7 +157,7 @@ public class GameController : MonoBehaviour
 
     private MusicData.Check HaveFailed(float time)
     {
-        Debug.Log("Fail : " + musicData.GetCurrent().Timer + " => " + time);
+        //Debug.Log("Fail : " + musicData.GetCurrent().Timer + " => " + time);
         
         foreach(StateMachine s in musicData.GetCurrent().stateMachines)
         {
@@ -166,7 +172,7 @@ public class GameController : MonoBehaviour
 
     private MusicData.Check HaveOk(float time)
     {
-        Debug.Log("Ok : " + musicData.GetCurrent().Timer + " => " + time);
+        //Debug.Log("Ok : " + musicData.GetCurrent().Timer + " => " + time);
         
         foreach (StateMachine s in musicData.GetCurrent().stateMachines)
         {
@@ -183,7 +189,7 @@ public class GameController : MonoBehaviour
     {
         startingTimer = Time.timeSinceLevelLoad+4;
         audioSource.PlayDelayed(4);
-        isPlaying = true;
+        Invoke("Launch", 4);
     }
 
     private void LoadData()
@@ -202,5 +208,16 @@ public class GameController : MonoBehaviour
         {
             Debug.Log("There no such file here");
         }
+    }
+
+    private void Launch()
+    {
+        isPlaying = true;
+        foreach (StateMachine s in musicData.GetCurrent().stateMachines)
+        {
+            if (s.NeedInit)
+                animationManager.Init(s);
+        }
+        Debug.Log("Launched");
     }
 }

@@ -46,7 +46,7 @@ public class AnimationManager : MonoBehaviour
 
             if (found)
             {
-                string nameState = type + "_Idle";
+                string nameState = type + "_idle";
 
                 animationMappers[stateMachine.Number].animator.Play(nameState);
             }
@@ -63,20 +63,17 @@ public class AnimationManager : MonoBehaviour
 
         Animator animator = animationMappers[stateMachine.Number].animator;
         
-        if (stateMachine.LastAnimation)
-        {
-            animator.SetTrigger("LastAnimation");
-        }
+        animator.SetBool("LastAnimation", stateMachine.LastAnimation);
 
         string code = "";
 
         switch (stateMachine.GetCheck())
         {
             case StateMachine.Check.Fail:
-                code = "_Fail";
+                code = "_fail";
                 break;
             case StateMachine.Check.Ok:
-                code = "_Ok";
+                code = "_ok";
                 break;
         }
 

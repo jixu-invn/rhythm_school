@@ -9,6 +9,11 @@ public class MusicData
     public BeatData[] Beats;
     public Mapper[] Mappers;
     private int current = 0;
+
+    public int GetIndex()
+    {
+        return current;
+    }
     
     public BeatData GetCurrent()
     {
@@ -28,16 +33,16 @@ public class MusicData
 
     public float ActionTime()
     {
-        return GetCurrent().Timer - superMargin;
+        return GetCurrent().Timer / 1000f - superMargin;
     }
 
     public float OkTime()
     {
-        return GetCurrent().Timer - margin;
+        return GetCurrent().Timer / 1000f - margin;
     }
 
     public float FailTime()
     {
-        return GetCurrent().Timer + margin;
+        return GetCurrent().Timer / 1000f + margin;
     }
 }
