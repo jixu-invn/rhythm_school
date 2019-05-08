@@ -31,6 +31,11 @@ public class MusicData
         return Beats[Beats.Length - 1];
     }
 
+    public float GetPreviousBeatTime()
+    {
+        return GetCurrent().Timer / 1000f - (2 * superMargin);
+    }
+
     public float ActionTime()
     {
         return GetCurrent().Timer / 1000f - superMargin;

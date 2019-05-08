@@ -4,6 +4,6 @@
 public class AnimationMapper
 {
     public int stateMachineNumber;
-    public Animator animator;
+    public TriAnimator TriAnimator;
     public string[] TypeCodes;
 }

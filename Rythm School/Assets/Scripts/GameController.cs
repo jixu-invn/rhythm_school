@@ -143,11 +143,7 @@ public class GameController : MonoBehaviour
         if (musicData.GetCurrent() != musicData.End())
         {
             musicData.Next();
-            foreach (StateMachine s in musicData.GetCurrent().stateMachines)
-            {
-                if (s.NeedInit)
-                    animationManager.Init(s);
-            }
+            Init();
         }
         else
         {
@@ -213,11 +209,17 @@ public class GameController : MonoBehaviour
     private void Launch()
     {
         isPlaying = true;
+        Init();
+        Debug.Log("Launched");
+    }
+
+    private void Init()
+    {
         foreach (StateMachine s in musicData.GetCurrent().stateMachines)
         {
+            animationManager.InitClue(s, musicData.GetPreviousBeatTime() - (Time.timeSinceLevelLoad - startingTimer));
             if (s.NeedInit)
                 animationManager.Init(s);
         }
-        Debug.Log("Launched");
     }
 }

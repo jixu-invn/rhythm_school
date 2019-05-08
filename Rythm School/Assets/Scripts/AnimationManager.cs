@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class AnimationManager : MonoBehaviour
 {
@@ -48,11 +49,29 @@ public class AnimationManager : MonoBehaviour
             {
                 string nameState = type + "_idle";
 
-                animationMappers[stateMachine.Number].animator.Play(nameState);
+                animationMappers[stateMachine.Number].TriAnimator.BaseLayer.Play(nameState);
             }
         }
     }
 
+    public void InitClue(StateMachine stateMachine, float time)
+    {
+        if (stateMachine.Number > animationMappers.Length || stateMachine.Number < 0)
+        {
+            Debug.LogError("StateMachine " + stateMachine.Number + " doesn't exist.");
+            return;
+        }
+
+        StartCoroutine(PlayClue(stateMachine, time));
+    }
+
+    private IEnumerator PlayClue(StateMachine stateMachine, float time)
+    {
+        Animator clueLayer = animationMappers[stateMachine.Number].TriAnimator.ClueLayer;
+        yield return new WaitForSecondsRealtime(time);
+        clueLayer.Play("clue", clueLayer.GetLayerIndex("Base Layer"));
+    }
+    
     public void Play(StateMachine stateMachine)
     {
         if (stateMachine.Number > animationMappers.Length || stateMachine.Number < 0)
@@ -61,24 +80,25 @@ public class AnimationManager : MonoBehaviour
             return;
         }
 
-        Animator animator = animationMappers[stateMachine.Number].animator;
+        Animator baseLayer = animationMappers[stateMachine.Number].TriAnimator.BaseLayer;
+        Animator effectLayer = animationMappers[stateMachine.Number].TriAnimator.EffectLayer;
         
-        animator.SetBool("LastAnimation", stateMachine.LastAnimation);
+        baseLayer.SetBool("LastAnimation", stateMachine.LastAnimation);
 
-        string code = "";
+        string baseName = "Base Layer.";
+
+        string stateName = baseName + stateMachine.Name;
 
         switch (stateMachine.GetCheck())
         {
             case StateMachine.Check.Fail:
-                code = "_fail";
+                effectLayer.Play(baseName + "fail");
                 break;
             case StateMachine.Check.Ok:
-                code = "_ok";
+                effectLayer.Play(baseName + "ok");
                 break;
         }
 
-        string stateName = stateMachine.Name + code;
-
-        animator.Play(stateName);
+        baseLayer.Play(stateName);
     }
 }

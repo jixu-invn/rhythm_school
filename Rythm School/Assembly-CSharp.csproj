@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\StateMachine.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\TriAnimator.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Jérome/Documents/UTC/GI02/SI28/projet/Rythm_School_Project/si28/Rythm School/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
