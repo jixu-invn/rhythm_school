@@ -88,12 +88,15 @@ public class GameController : MonoBehaviour
                         bi.Done();
                         hit = true;
                     }
-                    else
-                    {
-                        ok = false;
-                    }
                 }
-                
+            }
+        }
+
+        foreach(BeatInput bi in musicData.GetCurrent().Inputs)
+        {
+            if (bi.GetfDone() == false)
+            {
+                ok = false;
             }
         }
 
