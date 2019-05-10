@@ -33,21 +33,21 @@ public class MusicData
 
     public float GetPreviousBeatTime()
     {
-        return GetCurrent().Timer / 1000f - (2 * superMargin);
+        return GetCurrent().GetNormalizedtimer() - (4 * superMargin);
     }
 
     public float ActionTime()
     {
-        return GetCurrent().Timer / 1000f - superMargin;
+        return GetCurrent().GetNormalizedtimer() - superMargin;
     }
 
     public float OkTime()
     {
-        return GetCurrent().Timer / 1000f - margin;
+        return GetCurrent().GetNormalizedtimer() - margin;
     }
 
     public float FailTime()
     {
-        return GetCurrent().Timer / 1000f + margin;
+        return GetCurrent().GetNormalizedtimer() + margin;
     }
 }
