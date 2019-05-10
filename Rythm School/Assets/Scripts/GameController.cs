@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
-using System.Collections.Generic;
 
 /*
  * Manage the game engine
@@ -18,7 +17,6 @@ public class GameController : MonoBehaviour
     private MusicData musicData;
     private float startingTimer = -1;
     private bool isPlaying = false;
-    private bool isLoaded = false;
 
     private AnimationManager animationManager;
 
@@ -56,10 +54,6 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (isLoaded)
-        {
-            SetClues();
-        }
         if (isPlaying)
         {
             CheckBeat();
@@ -152,7 +146,7 @@ public class GameController : MonoBehaviour
         if (musicData.GetCurrent() != musicData.End())
         {
             musicData.Next();
-            InitAnim();
+            Init();
         }
         else
         {
@@ -195,7 +189,6 @@ public class GameController : MonoBehaviour
         startingTimer = Time.timeSinceLevelLoad+4;
         audioSource.PlayDelayed(4);
         Invoke("Launch", 4);
-        isLoaded = true;
     }
 
     private void LoadData()
@@ -219,32 +212,17 @@ public class GameController : MonoBehaviour
     private void Launch()
     {
         isPlaying = true;
-        InitAnim();
+        Init();
         Debug.Log("Launched");
     }
 
-    private void InitAnim()
+    private void Init()
     {
         foreach (StateMachine s in musicData.GetCurrent().stateMachines)
         {
+            animationManager.InitClue(s, musicData.GetPreviousBeatTime() - (Time.timeSinceLevelLoad - startingTimer));
             if (s.NeedInit)
                 animationManager.Init(s);
-        }
-    }
-
-    private void SetClues()
-    {
-        List<BeatData> beatDatas = musicData.NeedAClue(Time.timeSinceLevelLoad - startingTimer);
-
-        foreach (BeatData bd in beatDatas)
-        {
-            Debug.Log("beat at : " + bd.GetNormalizedTimer() + " | here : " + (Time.timeSinceLevelLoad - startingTimer));
-            foreach (StateMachine sm in bd.stateMachines)
-            {
-                if (animationManager.InitClue(sm, bd.GetNormalizedTimer() - (Time.timeSinceLevelLoad - startingTimer), musicData.clueDuration))
-                    bd.HasBeenClued();
-            }
-                
         }
     }
 }

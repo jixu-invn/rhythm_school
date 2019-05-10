@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 [System.Serializable]
-public class TriAnimator : MonoBehaviour
+public class TriAnimator
 {
     public Animator BaseLayer;
     public Animator EffectLayer;
-    public ClueScript ClueLayer;
+    public Animator ClueLayer;
 }
