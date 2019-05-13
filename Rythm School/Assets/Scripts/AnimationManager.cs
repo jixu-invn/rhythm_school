@@ -1,11 +1,13 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AnimationManager : MonoBehaviour
 {
     public static AnimationManager animationManager;
 
+    public int ClueNbState = 4;
     public AnimationMapper[] animationMappers;
+
+    private bool[] isPlayingAClue;
     
     private void Awake()
     {
@@ -19,6 +21,16 @@ public class AnimationManager : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+    }
+
+    private void Start()
+    {
+        isPlayingAClue = new bool[animationMappers.Length];
+        int i = 0;
+        for (i = 0; i<isPlayingAClue.Length;i++)
+        {
+            isPlayingAClue[i] = false;
         }
     }
 
@@ -54,18 +66,13 @@ public class AnimationManager : MonoBehaviour
         }
     }
 
-    public void InitClue(StateMachine stateMachine, float time)
+    public bool InitClue(StateMachine stateMachine, float time, float duration)
     {
         if (stateMachine.Number > animationMappers.Length || stateMachine.Number < 0)
         {
             Debug.LogError("StateMachine " + stateMachine.Number + " doesn't exist.");
-            return;
+            return false;
         }
-<<<<<<< HEAD
-
-        StartCoroutine(PlayClue(stateMachine, time));
-    }
-=======
         /*
         Debug.Log("time : " + time);
         Debug.Log("duration : " + duration);
@@ -76,14 +83,11 @@ public class AnimationManager : MonoBehaviour
             StartCoroutine(animationMappers[stateMachine.Number].TriAnimator.ClueLayer.Go(stateMachine.Number, ClueNbState, time - duration, duration));
             return true;
         }
->>>>>>> ClueManaging
 
-    private IEnumerator PlayClue(StateMachine stateMachine, float time)
-    {
-        Animator clueLayer = animationMappers[stateMachine.Number].TriAnimator.ClueLayer;
-        yield return new WaitForSecondsRealtime(time);
-        clueLayer.Play("clue", clueLayer.GetLayerIndex("Base Layer"));
+        return false;
+        
     }
+    
     
     public void Play(StateMachine stateMachine)
     {
@@ -113,5 +117,10 @@ public class AnimationManager : MonoBehaviour
         }
 
         baseLayer.Play(stateName);
+    }
+
+    public void ResetClue(int stateMachineNumber)
+    {
+        isPlayingAClue[stateMachineNumber] = false;
     }
 }

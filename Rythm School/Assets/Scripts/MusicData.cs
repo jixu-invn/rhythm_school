@@ -1,14 +1,18 @@
-﻿[System.Serializable]
+﻿using System.Collections.Generic;
+
+[System.Serializable]
 public class MusicData
 {
     public enum Check { Idle, Fail, Ok };
 
     public float margin = 0.05f;
-    public float superMargin = 0.5f;  
+    public float superMargin = 0.5f;
+    public float clueDuration = 1f;
 
     public BeatData[] Beats;
     public Mapper[] Mappers;
     private int current = 0;
+    private float multiplier = 2f;
 
     public int GetIndex()
     {
@@ -31,11 +35,8 @@ public class MusicData
         return Beats[Beats.Length - 1];
     }
 
-    public float GetPreviousBeatTime()
+    public List<BeatData> NeedAClue (float currentTime)
     {
-<<<<<<< HEAD
-        return GetCurrent().GetNormalizedtimer() - (4 * superMargin);
-=======
         List<BeatData> beatDatas = new List<BeatData>();
         int i = current;
         BeatData beat = Beats[i++];
@@ -51,21 +52,20 @@ public class MusicData
         }
 
         return beatDatas;
->>>>>>> ClueManaging
     }
 
     public float ActionTime()
     {
-        return GetCurrent().GetNormalizedtimer() - superMargin;
+        return GetCurrent().GetNormalizedTimer() - superMargin;
     }
 
     public float OkTime()
     {
-        return GetCurrent().GetNormalizedtimer() - margin;
+        return GetCurrent().GetNormalizedTimer() - margin;
     }
 
     public float FailTime()
     {
-        return GetCurrent().GetNormalizedtimer() + margin;
+        return GetCurrent().GetNormalizedTimer() + margin;
     }
 }
