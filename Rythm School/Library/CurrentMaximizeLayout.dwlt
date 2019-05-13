@@ -20,10 +20,14 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 711, y: 494}
+  m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
+<<<<<<< HEAD
   controlID: 1082
+=======
+  controlID: 2014
+>>>>>>> ClueManaging
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +49,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2309
     y: 73
     width: 967
     height: 612
+=======
+    x: 2
+    y: 20
+    width: 974
+    height: 609
+>>>>>>> ClueManaging
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 1
@@ -61,10 +72,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -483.5
-    m_HBaseRangeMax: 483.5
-    m_VBaseRangeMin: -272
-    m_VBaseRangeMax: 272
+    m_HBaseRangeMin: -487
+    m_HBaseRangeMax: 487
+    m_VBaseRangeMin: -274
+    m_VBaseRangeMax: 274
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -73,7 +84,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -82,25 +93,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 967
-      height: 595
+      width: 974
+      height: 592
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 483.5, y: 297.5}
+    m_Translation: {x: 487, y: 296}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -483.5
-      y: -297.5
-      width: 967
-      height: 595
+      x: -487
+      y: -296
+      width: 974
+      height: 592
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 967, y: 612}
+  m_LastWindowPixelSize: {x: 974, y: 609}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -127,10 +138,14 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 711, y: 494}
+  m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
+<<<<<<< HEAD
   controlID: 1083
+=======
+  controlID: 2015
+>>>>>>> ClueManaging
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,7 +170,11 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
+<<<<<<< HEAD
   controlID: 1084
+=======
+  controlID: 1968
+>>>>>>> ClueManaging
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,8 +192,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 389
     height: 301
+=======
+    width: 388
+    height: 302
+>>>>>>> ClueManaging
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
@@ -205,15 +229,24 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 73
+<<<<<<< HEAD
     width: 389
     height: 282
+=======
+    width: 388
+    height: 283
+>>>>>>> ClueManaging
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 3efbffff
+=======
+      m_ExpandedIDs: 12f9ffff
+>>>>>>> ClueManaging
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -253,11 +286,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 301
     width: 389
     height: 646
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
+=======
+    y: 302
+    width: 388
+    height: 645
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+>>>>>>> ClueManaging
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -285,9 +326,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1920
+<<<<<<< HEAD
     y: 374
     width: 389
     height: 627
+=======
+    y: 375
+    width: 388
+    height: 626
+>>>>>>> ClueManaging
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -301,7 +348,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Animations
+=======
+    - Assets/Scripts
+>>>>>>> ClueManaging
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders:
@@ -315,7 +366,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a4310000
     m_LastClickedID: 12708
+<<<<<<< HEAD
     m_ExpandedIDs: ffffffff00000000062a0000882a0000e62a00003e2b0000102c0000fe2c0000
+=======
+    m_ExpandedIDs: ffffffff0000000070290000022a0000182a00006a2a0000ce2a0000da2a0000a82b0000122c0000ac2c00003e2d00006c2f0000
+>>>>>>> ClueManaging
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -340,10 +395,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: fe290000
     m_LastClickedID: 10750
     m_ExpandedIDs: ffffffff00000000062a0000882a0000e62a00003e2b0000102c0000fe2c0000
+=======
+    scrollPos: {x: 0, y: 643}
+    m_SelectedIDs: 442e0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff0000000070290000022a0000182a00006a2a0000ce2a0000da2a0000a82b0000122c0000ac2c00003e2d00006c2f0000
+>>>>>>> ClueManaging
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -368,8 +430,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: fe290000
     m_LastClickedInstanceID: 10750
+=======
+    m_SelectedInstanceIDs: 442e0000
+    m_LastClickedInstanceID: 11844
+>>>>>>> ClueManaging
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300002432000092c6fdff
     m_RenameOverlay:
@@ -417,12 +484,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 389
     y: 0
-    width: 969
+    width: 978
     height: 947
-  m_MinSize: {x: 204, y: 344}
-  m_MaxSize: {x: 4004, y: 8044}
+  m_MinSize: {x: 204, y: 322}
+  m_MaxSize: {x: 4004, y: 8022}
   vertical: 1
+<<<<<<< HEAD
   controlID: 1050
+=======
+  controlID: 1941
+>>>>>>> ClueManaging
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -440,7 +511,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 969
+    width: 978
     height: 631
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
@@ -451,7 +522,7 @@ MonoBehaviour:
   - {fileID: 12}
   - {fileID: 13}
   m_Selected: 1
-  m_LastSelected: 3
+  m_LastSelected: 2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -473,7 +544,11 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2309
+=======
+    x: 2308
+>>>>>>> ClueManaging
     y: 73
     width: 967
     height: 612
@@ -481,16 +556,22 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 28ac64d009214eb4eae8757b39bd7c42
   m_Gizmos: 0
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0.095668495, y: -0.31737605, z: -7.5758786}
     speed: 2
     m_Value: {x: 0.095668495, y: -0.31737605, z: -7.5758786}
+=======
+    m_Target: {x: 0, y: 0, z: 0}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> ClueManaging
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -523,9 +604,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 3.5747268
     speed: 2
     m_Value: 3.5747268
+=======
+    m_Target: 22
+    speed: 2
+    m_Value: 22
+>>>>>>> ClueManaging
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -571,9 +658,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2309
     y: 73
     width: 967
+=======
+    x: 2308
+    y: 73
+    width: 976
+>>>>>>> ClueManaging
     height: 612
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
@@ -610,6 +703,7 @@ MonoBehaviour:
     - {fileID: 5067041605680981345, guid: 86cd3cfb827e5114e99500203cadd86d, type: 2}
     - {fileID: -4809962218869744528, guid: 482ce7a3cc7504048bf33f7a4891e69e, type: 2}
     m_ValueSerializationHelper:
+<<<<<<< HEAD
     - e00: 0.2640909
       e01: 0
       e02: 0
@@ -618,6 +712,16 @@ MonoBehaviour:
       e11: 0.2640909
       e12: 0
       e13: 234.36136
+=======
+    - e00: 0.40303183
+      e01: 0
+      e02: 0
+      e03: -176.87775
+      e10: 0
+      e11: 0.40303183
+      e12: 0
+      e13: 238.63095
+>>>>>>> ClueManaging
       e20: 0
       e21: 0
       e22: 1
@@ -626,14 +730,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.2640909
+    - e00: 0.7399488
       e01: 0
       e02: 0
-      e03: 147.04546
+      e03: 31.234283
       e10: 0
-      e11: 0.2640909
+      e11: 0.7399488
       e12: 0
-      e13: 207.95227
+      e13: -57.623688
       e20: 0
       e21: 0
       e22: 1
@@ -674,6 +778,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 0.83
       e01: 0
       e02: 0
@@ -682,6 +787,16 @@ MonoBehaviour:
       e11: 0.83
       e12: 0
       e13: 226.25
+=======
+    - e00: 0.83285713
+      e01: 0
+      e02: 0
+      e03: -78.27139
+      e10: 0
+      e11: 0.83285713
+      e12: 0
+      e13: 202.55
+>>>>>>> ClueManaging
       e20: 0
       e21: 0
       e22: 1
@@ -725,10 +840,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 631
-    width: 969
+    width: 978
     height: 316
-  m_MinSize: {x: 104, y: 122}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -757,12 +872,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 2309
     y: 704
-    width: 967
+    width: 976
     height: 297
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 10750
+=======
+  m_LastSelectedObjectID: 12146
+>>>>>>> ClueManaging
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -778,12 +897,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1358
     y: 0
     width: 562
+=======
+    x: 1366
+    y: 0
+    width: 554
+>>>>>>> ClueManaging
     height: 947
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -810,9 +935,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 3278
     y: 73
     width: 560
+=======
+    x: 3286
+    y: 73
+    width: 552
+>>>>>>> ClueManaging
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0

@@ -61,9 +61,22 @@ public class AnimationManager : MonoBehaviour
             Debug.LogError("StateMachine " + stateMachine.Number + " doesn't exist.");
             return;
         }
+<<<<<<< HEAD
 
         StartCoroutine(PlayClue(stateMachine, time));
     }
+=======
+        /*
+        Debug.Log("time : " + time);
+        Debug.Log("duration : " + duration);
+        */
+        if (!isPlayingAClue[stateMachine.Number])
+        {
+            isPlayingAClue[stateMachine.Number] = true;
+            StartCoroutine(animationMappers[stateMachine.Number].TriAnimator.ClueLayer.Go(stateMachine.Number, ClueNbState, time - duration, duration));
+            return true;
+        }
+>>>>>>> ClueManaging
 
     private IEnumerator PlayClue(StateMachine stateMachine, float time)
     {

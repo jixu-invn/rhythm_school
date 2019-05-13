@@ -33,7 +33,25 @@ public class MusicData
 
     public float GetPreviousBeatTime()
     {
+<<<<<<< HEAD
         return GetCurrent().GetNormalizedtimer() - (4 * superMargin);
+=======
+        List<BeatData> beatDatas = new List<BeatData>();
+        int i = current;
+        BeatData beat = Beats[i++];
+        
+        while (i < Beats.Length && beat.GetNormalizedTimer() - currentTime < multiplier * clueDuration)
+        {
+            if (beat.GetClued() == false)
+            {
+                beatDatas.Add(beat);
+            }
+
+            beat = Beats[i++];
+        }
+
+        return beatDatas;
+>>>>>>> ClueManaging
     }
 
     public float ActionTime()

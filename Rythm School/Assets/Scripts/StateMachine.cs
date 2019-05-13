@@ -8,6 +8,17 @@ public class StateMachine
     public bool NeedInit = false;
     public bool LastAnimation = false;
     private StateMachine.Check check = StateMachine.Check.Idle;
+    private bool clued = false;
+
+    public void HasBeenClued()
+    {
+        clued = true;
+    }
+
+    public bool GetClued()
+    {
+        return clued;
+    }
 
     public StateMachine.Check GetCheck()
     {
