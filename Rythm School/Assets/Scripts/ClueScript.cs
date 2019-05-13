@@ -4,34 +4,53 @@ using UnityEngine;
 public class ClueScript : MonoBehaviour
 {
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     private AnimationManager animationManager;
 
     private void Start()
     {
         animationManager = AnimationManager.animationManager;
-    }
-
-    private void OnEnable()
-    {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public IEnumerator Go(int stateMachineNumber, int nbState, float time, float duration)
     {
-        yield return new WaitForSecondsRealtime(time);
-        
-        animator.SetTrigger("Next");
+        Color c = Random.ColorHSV(0f, 1f, 0f, 1f, 1f, 1f, 1f, 1f);
+        spriteRenderer.color = c;
+        float normalTime = (time + duration + Time.timeSinceLevelLoad);
+        float startingTime = Time.timeSinceLevelLoad;
 
-        int j;
 
-        duration = time < 0 ? duration + time : duration;
+        float stepDuration = duration / nbState;
+        int j = 0;
 
-        for (j = 0; j < nbState; j++)
+        if (time > 0)
         {
-            yield return new WaitForSecondsRealtime(duration / nbState);
-            animator.SetTrigger("Next");
+            yield return new WaitForSecondsRealtime(time);
+        }
+        else
+        {
+            time *= -1;
+            j = (int)Mathf.Floor(time / stepDuration);
+            if (j < nbState)
+            {
+                animator.Play("clue_" + j);
+                yield return new WaitForSecondsRealtime(stepDuration - (time - stepDuration * j));
+                j++;
+            }
         }
 
+
+        int i;
+
+        for (i = j; i < nbState; i++)
+        {
+            animator.SetTrigger("Next");
+            yield return new WaitForSecondsRealtime(stepDuration);
+        }
+        animator.SetTrigger("Next");
+        Debug.Log("S : " + stateMachineNumber + " | Time : " + Time.timeSinceLevelLoad + " | NormalTime : " + normalTime + " | Diff : " + (Time.timeSinceLevelLoad - normalTime) + " | StartingTime : " + startingTime + " | time : " + time + " | j : " + j + " | stepDuration : " + stepDuration + " | time / stepDuration : " + (time / stepDuration) + " | floor : " + Mathf.Floor(time/stepDuration));
         animationManager.ResetClue(stateMachineNumber);
     }
 }

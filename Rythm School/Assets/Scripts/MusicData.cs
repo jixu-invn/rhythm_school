@@ -41,7 +41,7 @@ public class MusicData
         int i = current;
         BeatData beat = Beats[i++];
         
-        while (beat.GetNormalizedTimer() - currentTime < multiplier * clueDuration)
+        while (i < Beats.Length && beat.GetNormalizedTimer() - currentTime < multiplier * clueDuration)
         {
             if (beat.GetClued() == false)
             {

@@ -238,11 +238,28 @@ public class GameController : MonoBehaviour
 
         foreach (BeatData bd in beatDatas)
         {
+
             Debug.Log("beat at : " + bd.GetNormalizedTimer() + " | here : " + (Time.timeSinceLevelLoad - startingTimer));
             foreach (StateMachine sm in bd.stateMachines)
             {
                 if (animationManager.InitClue(sm, bd.GetNormalizedTimer() - (Time.timeSinceLevelLoad - startingTimer), musicData.clueDuration))
-                    bd.HasBeenClued();
+                {
+                    sm.HasBeenClued();
+                }
+            }
+
+            bool ok = true;
+
+            foreach(StateMachine sm in bd.stateMachines)
+            {
+                if (sm.GetClued() == false)
+                    ok = false;
+            }
+
+            if (ok)
+            {
+                bd.HasBeenClued();
+                Debug.Log("BeatTime : " + (bd.GetNormalizedTimer() + startingTimer));
             }
                 
         }
