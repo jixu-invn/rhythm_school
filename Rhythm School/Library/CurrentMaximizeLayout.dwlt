@@ -1,0 +1,3903 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 16}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1858
+    height: 987
+  m_MinSize: {x: 538, y: 494}
+  m_MaxSize: {x: 18008, y: 14044}
+  vertical: 0
+  controlID: 2984
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 401
+    y: 73
+    width: 1019
+    height: 639
+  m_ViewDataDictionary: {fileID: 0}
+  m_VSyncEnabled: 1
+  m_MaximizeOnPlay: 1
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_TargetDisplay: 0
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -509.5
+    m_HBaseRangeMax: 509.5
+    m_VBaseRangeMin: -311
+    m_VBaseRangeMax: 311
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 1019
+      height: 622
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 509.5, y: 311}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -509.5
+      y: -311
+      width: 1019
+      height: 622
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 0
+  m_LastWindowPixelSize: {x: 1019, y: 639}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000100000100
+  m_XRRenderMode: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1360
+    height: 987
+  m_MinSize: {x: 436, y: 494}
+  m_MaxSize: {x: 14006, y: 14044}
+  vertical: 0
+  controlID: 2958
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 7}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 339
+    height: 987
+  m_MinSize: {x: 232, y: 494}
+  m_MaxSize: {x: 10002, y: 14044}
+  vertical: 1
+  controlID: 2890
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 339
+    height: 343
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 6}
+  m_Panes:
+  - {fileID: 6}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 62
+    y: 73
+    width: 339
+    height: 324
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 70fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 620e9565182e4bc4290e7062f34ccdcd
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 343
+    width: 339
+    height: 644
+  m_MinSize: {x: 232, y: 272}
+  m_MaxSize: {x: 10002, y: 10022}
+  m_ActualView: {fileID: 8}
+  m_Panes:
+  - {fileID: 8}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 62
+    y: 416
+    width: 339
+    height: 625
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Scripts
+  m_ViewMode: 0
+  m_StartGridSize: 64
+  m_LastFolders: []
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: "C:\\Users\\J\xE9rome\\Documents\\UTC\\GI02\\SI28\\projet\\Rhythm_School_Project\\si28\\Rhythm
+    School"
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d02a0000
+    m_LastClickedID: 10960
+    m_ExpandedIDs: ffffffff00000000782900000e2a0000782a0000dc2a0000b62b00004a2d0000782f0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: e8260000
+    m_LastClickedID: 9960
+    m_ExpandedIDs: ffffffff00000000782900000e2a0000782a0000dc2a0000b62b00004a2d0000782f0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 7}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: e8260000
+    m_LastClickedInstanceID: 9960
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_DirectoriesAreaWidth: 115
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 14}
+  m_Position:
+    serializedVersion: 2
+    x: 339
+    y: 0
+    width: 1021
+    height: 987
+  m_MinSize: {x: 204, y: 344}
+  m_MaxSize: {x: 4004, y: 8044}
+  vertical: 1
+  controlID: 2959
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1021
+    height: 658
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 11}
+  - {fileID: 2}
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Selected: 1
+  m_LastSelected: 2
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 428
+    y: 73
+    width: 1113
+    height: 578
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 68e1171599554034aa694f071d6f6983
+  m_Gizmos: 1
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 0, y: 0, z: 0}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_SceneViewState:
+    showFog: 1
+    showMaterialUpdate: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+  grid:
+    xGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    yGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.01
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_FieldOfView: 90
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_ShowGlobalGrid: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 401
+    y: 73
+    width: 1019
+    height: 639
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 401
+    y: 73
+    width: 1019
+    height: 639
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 8155207784125536486, guid: ddadc4bdee7d3154ca6beb9751539edd, type: 2}
+    - {fileID: 5067041605680981345, guid: 86cd3cfb827e5114e99500203cadd86d, type: 2}
+    - {fileID: -4809962218869744528, guid: 482ce7a3cc7504048bf33f7a4891e69e, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.28181818
+      e01: 0
+      e02: 0
+      e03: -13.181824
+      e10: 0
+      e11: 0.28181818
+      e12: 0
+      e13: 244.22726
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.8857143
+      e01: 0
+      e02: 0
+      e03: -73.57144
+      e10: 0
+      e11: 0.8857143
+      e12: 0
+      e13: 209
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.8857143
+      e01: 0
+      e02: 0
+      e03: -73.57144
+      e10: 0
+      e11: 0.8857143
+      e12: 0
+      e13: 209
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 482ce7a3cc7504048bf33f7a4891e69e,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -4809962218869744528, guid: 482ce7a3cc7504048bf33f7a4891e69e,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 658
+    width: 1021
+    height: 329
+  m_MinSize: {x: 104, y: 122}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 401
+    y: 731
+    width: 1019
+    height: 310
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 12440
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1360
+    y: 0
+    width: 498
+    height: 987
+  m_MinSize: {x: 102, y: 122}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1422
+    y: 73
+    width: 496
+    height: 968
+  m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a933b72fa91c7143a04fc51a5e0889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: MusicDataEditor
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1422
+    y: 73
+    width: 496
+    height: 968
+  m_ViewDataDictionary: {fileID: 0}
+  musicData:
+    margin: 0.243
+    superMargin: 0.243
+    clueDuration: 1
+    Beats:
+    - Timer: 7500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 8437
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 9375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 9843
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 0
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 10312
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 10546
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 10781
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 11250
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 12187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 13125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 13593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 14062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 14296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 14531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 15000
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 15937
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 16875
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 17343
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 17812
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 18046
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 18281
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 18750
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 19687
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 20625
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 21093
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 21562
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 21796
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 22031
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 22500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 23437
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 24375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 24843
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 25312
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 25546
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 25781
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 26250
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 27187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 28125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 28593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 29062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 29296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 29531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 30000
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 30937
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 31875
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 32343
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 32812
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 33046
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 33281
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 33281
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 33750
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 34687
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 35625
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 36093
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 36562
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 36796
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 37031
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 37500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 38437
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 39375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 39843
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 40312
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 40546
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 40781
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 41250
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 42187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 43125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 43593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 44062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 44296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 44531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 52500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 53437
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 54375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 55312
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 56250
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 57187
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 58125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 58593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 59062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 59296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 59531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 60000
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 60468
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 60937
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 61405
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 61874
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 62108
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 62343
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 62577
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 62812
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 63046
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 63281
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 63750
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 64218
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 64687
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 65155
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 65625
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 66093
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 66562
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 66796
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 67031
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 67500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 67968
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 68437
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 68905
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 69375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 69609
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 69844
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 70078
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 70313
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 70547
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 70782
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 71250
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 71718
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 72187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 72656
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 73125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 73593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 74062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 74296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 74531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 75000
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 75468
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 75937
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 76405
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 76875
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 77109
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 77344
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 77578
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 77813
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 78047
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 78282
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 78750
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 79218
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 79687
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 80156
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 80625
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 81093
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 81562
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 81796
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 82031
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 82500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 82968
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 83437
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 83905
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 84375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 84609
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 84844
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 85078
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 85313
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 85547
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 85782
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 86250
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 86718
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 87187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 87656
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 88125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 88593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 89062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 89296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 89531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 97500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 98437
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 99375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 100312
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 101250
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 102187
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 103125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 103593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 104062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 104296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 104531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 105000
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 105937
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 106875
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 107343
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 107812
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 108046
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 108281
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 108750
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 109687
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 110625
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 111093
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 111562
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 111796
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 112031
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 112500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 113437
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 114375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 114843
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 115312
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 115546
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 115781
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 116250
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 117187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 118125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 118593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 119062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 119296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 119531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 120000
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 120468
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 120937
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 121405
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 121875
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 122343
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 122812
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 123046
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 123281
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 123750
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 124218
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 124687
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 0
+        Name: r_shuffle
+        NeedInit: 1
+        LastAnimation: 1
+    - Timer: 125155
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 125625
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: r_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 126093
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: r_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 126562
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 126796
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 127031
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 127500
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 127968
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 128437
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 128905
+      Inputs:
+      - Action: 0
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 129375
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 129843
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 130312
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 130546
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 130781
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 131250
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 131718
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 132187
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 132656
+      Inputs:
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 1
+        Name: b_shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    - Timer: 133125
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 0
+        Name: g_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_pour
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: filling
+        NeedInit: 1
+        LastAnimation: 0
+    - Timer: 133593
+      Inputs:
+      - Action: 0
+        actionType: 1
+      - Action: 1
+        actionType: 1
+      stateMachines:
+      - Number: 0
+        Name: g_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 1
+        Name: b_end
+        NeedInit: 0
+        LastAnimation: 0
+      - Number: 2
+        Name: end
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 134062
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 134296
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 0
+    - Timer: 134531
+      Inputs:
+      - Action: 0
+        actionType: 0
+      - Action: 1
+        actionType: 0
+      stateMachines:
+      - Number: 2
+        Name: shuffle
+        NeedInit: 0
+        LastAnimation: 1
+    Mappers:
+    - input: 100
+      action: 0
+    - input: 106
+      action: 1
