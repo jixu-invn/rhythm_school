@@ -1,24 +1,24 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
-using System.IO;
 using System.Collections.Generic;
 
 /*
  * Manage the game engine
  */
 
-[RequireComponent(typeof(AudioSource),typeof(AnimationManager))]
+[RequireComponent(typeof(AudioSource),typeof(AnimationManager),typeof(PlayerController))]
 public class GameController : MonoBehaviour
 {
     public static GameController gameController;
 
     public AudioClip Clip;
 
+    private PlayerController playerController;
     private AudioSource audioSource;
     private MusicData musicData;
     private float startingTimer = -1;
     private bool isPlaying = false;
     private bool isLoaded = false;
+    private bool initilised = false;
 
     private AnimationManager animationManager;
 
@@ -41,17 +41,15 @@ public class GameController : MonoBehaviour
             Debug.LogError("No Clip");
             Destroy(gameObject);
         }
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = Clip;
     }
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = Clip;
-
+        playerController = PlayerController.playerController;
         animationManager = AnimationManager.animationManager;
-
-        LoadData();
-        StartLevel();
     }
 
     private void Update()
@@ -59,6 +57,12 @@ public class GameController : MonoBehaviour
         if (isLoaded)
         {
             SetClues();
+            Debug.Log("Length : " + Clip.length);
+            if (Time.timeSinceLevelLoad - startingTimer > Clip.length)
+            {
+                Debug.Log("hello");
+                playerController.End();
+            }
         }
         if (isPlaying)
         {
@@ -197,24 +201,7 @@ public class GameController : MonoBehaviour
         Invoke("Launch", 4);
         isLoaded = true;
     }
-
-    private void LoadData()
-    {
-        string FileName = SceneManager.GetActiveScene().name + ".json";
-        string DataPath = Path.Combine(Application.streamingAssetsPath, FileName);
-
-        Debug.Log(DataPath);
-        
-        if (File.Exists(DataPath))
-        {
-            string DataAsJson = File.ReadAllText(DataPath);
-            musicData = JsonUtility.FromJson<MusicData>(DataAsJson);
-        }
-        else
-        {
-            Debug.Log("There no such file here");
-        }
-    }
+    
 
     private void Launch()
     {
@@ -262,6 +249,16 @@ public class GameController : MonoBehaviour
                 Debug.Log("BeatTime : " + (bd.GetNormalizedTimer() + startingTimer));
             }
                 
+        }
+    }
+
+    public void SetMusicData(MusicData _musicData)
+    {
+        if (initilised == false)
+        {
+            musicData = _musicData;
+            StartLevel();
+            initilised = true;
         }
     }
 }

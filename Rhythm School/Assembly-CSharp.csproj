@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\BeatInput.cs" />
     <Compile Include="Assets\Scripts\ClueScript.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\GameMaster.cs" />
     <Compile Include="Assets\Scripts\Mapper.cs" />
     <Compile Include="Assets\Scripts\MusicData.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />

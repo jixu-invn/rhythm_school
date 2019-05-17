@@ -62,4 +62,10 @@ public class PlayerController : MonoBehaviour
 
         score += check == MusicData.Check.Ok ? 1 : 0;
     }
+    
+    public void End()
+    {
+        GameMaster.gameMaster.AddToGlobalScore(score);
+        GameMaster.gameMaster.End();
+    }
 }
