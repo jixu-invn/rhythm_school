@@ -1,4 +1,4 @@
-﻿using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 using System.IO;
 using UnityEngine;
 
@@ -9,7 +9,10 @@ public class GameMaster : MonoBehaviour
     private Scene currentScene;
     private GameController gameController;
     private MusicData musicData;
-    private int GlobalScore;
+    private float GlobalScore = 0;
+    private float oldGrade = 100;
+    private float currentGrade = 100;
+    private float nbLevel = 0;
 
     private void Awake()
     {
@@ -100,11 +103,24 @@ public class GameMaster : MonoBehaviour
         NextScene();
     }
 
-    public void AddToGlobalScore(int _score)
+    public void AddToGlobalScore(float _score)
     {
         if (!currentScene.name.StartsWith("tuto"))
         {
+            oldGrade = currentGrade;
             GlobalScore += _score;
+            nbLevel++;
+            currentGrade = GlobalScore / nbLevel;
         }
+    }
+
+    public float getOldGrade()
+    {
+        return oldGrade;
+    }
+
+    public float getCurrentGrade()
+    {
+        return currentGrade;
     }
 }
