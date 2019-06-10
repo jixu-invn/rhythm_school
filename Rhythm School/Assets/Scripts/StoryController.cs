@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.IO;
 using System.Collections;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(AudioSource), typeof(AnimationManager))]
 public class StoryController : MonoBehaviour
 {
     public static StoryController storyController;

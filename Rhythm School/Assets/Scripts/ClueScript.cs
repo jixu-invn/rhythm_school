@@ -16,7 +16,7 @@ public class ClueScript : MonoBehaviour
 
     public IEnumerator Go(int stateMachineNumber, int nbState, float time, float duration)
     {
-        Color c = Random.ColorHSV(0f, 1f, 0f, 1f, 1f, 1f, 1f, 1f);
+        Color c = Random.ColorHSV(1f, 1f, 0f, 1f, 1f, 1f, 1f, 1f);
         spriteRenderer.color = c;
         float normalTime = (time + duration + Time.timeSinceLevelLoad);
         float startingTime = Time.timeSinceLevelLoad;

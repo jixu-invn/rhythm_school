@@ -4,7 +4,7 @@ public class AnimationManager : MonoBehaviour
 {
     public static AnimationManager animationManager;
 
-    public int ClueNbState = 4;
+    public int ClueNbState = 8;
     public AnimationMapper[] animationMappers;
 
     private bool[] isPlayingAClue;
