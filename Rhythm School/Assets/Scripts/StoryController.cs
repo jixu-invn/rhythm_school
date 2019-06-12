@@ -9,6 +9,7 @@ public class StoryController : MonoBehaviour
     public static StoryController storyController;
     private StoryData storyData;
     private AnimationManager animationManager;
+    private EmotionManager emotionManager;
     private bool isLoaded = false;
     private string suffix = "";
     private float currentGrade;
@@ -84,7 +85,7 @@ public class StoryController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 StartCoroutine(PrintDialog());
-                // Gerer emotions
+                emotionManager.playAnimation(storyData.GetCurrent());
             }
         }
         else if (!talking && (storyData.Dialog.Length) == storyData.GetIndex())
