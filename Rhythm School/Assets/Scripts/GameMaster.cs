@@ -105,7 +105,7 @@ public class GameMaster : MonoBehaviour
     {
         if (!currentScene.name.StartsWith("tuto"))
         {
-            scores[nbLevel] = _score;
+            scores[(int)nbLevel] = _score;
             oldGrade = currentGrade;
             GlobalScore += _score;
             nbLevel++;
@@ -113,7 +113,7 @@ public class GameMaster : MonoBehaviour
         }
     }
 
-    public int getScore(int i)
+    public float getScore(int i)
     {
         return scores[i];
     }
