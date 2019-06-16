@@ -13,6 +13,8 @@ public class GameMaster : MonoBehaviour
     private float oldGrade = 100;
     private float currentGrade = 100;
     private float nbLevel = 0;
+    private float[] scores = new float[2];
+
 
     private void Awake()
     {
@@ -103,11 +105,17 @@ public class GameMaster : MonoBehaviour
     {
         if (!currentScene.name.StartsWith("tuto"))
         {
+            scores[nbLevel] = _score;
             oldGrade = currentGrade;
             GlobalScore += _score;
             nbLevel++;
             currentGrade = GlobalScore / nbLevel;
         }
+    }
+
+    public int getScore(int i)
+    {
+        return scores[i];
     }
 
     public float getOldGrade()
