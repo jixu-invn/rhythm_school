@@ -21,8 +21,8 @@ public class ScoreScene : MonoBehaviour
 
     void Update()
     {
-       score1.text = (GameMaster.gameMaster.getOldGrade()/5) + "/20";
-       score2.text = (GameMaster.gameMaster.getCurrentGrade()/5) + "/20";
-       score3.text = ((GameMaster.gameMaster.getOldGrade()+GameMaster.gameMaster.getCurrentGrade())/10) + "/20";
+       score1.text = (GameMaster.gameMaster.getScore(0)/5) + "/20";
+       score2.text = (GameMaster.gameMaster.getScore(1)/5) + "/20";
+       score3.text = ((GameMaster.gameMaster.getScore(0)+GameMaster.gameMaster.getScore(1))/10) + "/20";
     }
 }
