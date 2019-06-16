@@ -7,6 +7,7 @@ public class AnimationManager : MonoBehaviour
     public int ClueNbState = 8;
     public AnimationMapper[] animationMappers;
 
+    private bool[] init;
     private bool[] isPlayingAClue;
     
     private void Awake()
@@ -27,10 +28,12 @@ public class AnimationManager : MonoBehaviour
     private void Start()
     {
         isPlayingAClue = new bool[animationMappers.Length];
+        init = new bool[animationMappers.Length];
         int i = 0;
         for (i = 0; i<isPlayingAClue.Length;i++)
         {
             isPlayingAClue[i] = false;
+            init[i] = false;
         }
     }
 
@@ -60,8 +63,7 @@ public class AnimationManager : MonoBehaviour
             if (found)
             {
                 string nameState = type + "_idle";
-
-                animationMappers[stateMachine.Number].TriAnimator.BaseLayer.Play(nameState);
+                animationMappers[stateMachine.Number].TriAnimator.BaseLayer.SetTrigger(nameState);
             }
         }
     }

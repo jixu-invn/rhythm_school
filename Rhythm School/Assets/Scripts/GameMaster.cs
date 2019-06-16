@@ -87,10 +87,6 @@ public class GameMaster : MonoBehaviour
                 gameController.SetMusicData(musicData);
             }
         }
-        else
-        {
-            Debug.Log("There no such file here");
-        }
     }
 
     public void Launch()

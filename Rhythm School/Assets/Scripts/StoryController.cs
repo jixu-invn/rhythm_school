@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(EmotionManager))]
 public class StoryController : MonoBehaviour
 {
     public static StoryController storyController;
@@ -18,6 +19,8 @@ public class StoryController : MonoBehaviour
     public float delay = 0.05f;
     private bool talking = false;
     public Text textBox;
+    public Text NameBox;
+    private Coroutine b;
 
     private GameController gameController;
 
@@ -61,7 +64,6 @@ public class StoryController : MonoBehaviour
         }
 
         string FileName = SceneManager.GetActiveScene().name + "_" + suffix + ".json";
-        Debug.Log(FileName);
         string DataPath = Path.Combine(Application.streamingAssetsPath, FileName);
        
         
@@ -75,7 +77,11 @@ public class StoryController : MonoBehaviour
             Debug.Log("There is no such file here");
         }
         animationManager = AnimationManager.animationManager;
-       
+        emotionManager = EmotionManager.emotionManager;
+
+        b = StartCoroutine(PrintDialog());
+        NameBox.text = storyData.GetCurrent().CurrentCharacter.ToString();
+        emotionManager.playAnimation(storyData.GetCurrent());
     }
 
     private void Update()
@@ -84,7 +90,8 @@ public class StoryController : MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
-                StartCoroutine(PrintDialog());
+                b = StartCoroutine(PrintDialog());
+                NameBox.text = storyData.GetCurrent().CurrentCharacter.ToString();
                 emotionManager.playAnimation(storyData.GetCurrent());
             }
         }
@@ -94,6 +101,13 @@ public class StoryController : MonoBehaviour
             {
                 GameMaster.gameMaster.End();
             }
+        }
+        else if (talking && (Input.GetKeyUp(KeyCode.Space)))
+        {
+            StopCoroutine(b);
+            textBox.text = storyData.GetCurrent().Phrase;
+            storyData.Next();
+            talking = false;
         }
     }
 

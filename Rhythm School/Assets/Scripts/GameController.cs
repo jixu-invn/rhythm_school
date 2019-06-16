@@ -57,10 +57,8 @@ public class GameController : MonoBehaviour
         if (isLoaded)
         {
             SetClues();
-            Debug.Log("Length : " + Clip.length);
             if (Time.timeSinceLevelLoad - startingTimer > Clip.length)
             {
-                Debug.Log("hello");
                 playerController.End();
             }
         }
@@ -141,12 +139,6 @@ public class GameController : MonoBehaviour
 
         if (time > musicData.FailTime())
         {
-            Debug.Log("Index = " + musicData.GetIndex());
-            foreach (StateMachine state in musicData.GetCurrent().stateMachines)
-            {
-                Debug.Log("StateMachine = " + state.Number + " || animation = " + state.Name);
-            }
-
             HaveFailed(time);
         }
     }
@@ -165,9 +157,7 @@ public class GameController : MonoBehaviour
     }
 
     private MusicData.Check HaveFailed(float time)
-    {
-        //Debug.Log("Fail : " + musicData.GetCurrent().Timer + " => " + time);
-        
+    {        
         foreach(StateMachine s in musicData.GetCurrent().stateMachines)
         {
             s.SetFail();
@@ -180,9 +170,7 @@ public class GameController : MonoBehaviour
     }
 
     private MusicData.Check HaveOk(float time)
-    {
-        //Debug.Log("Ok : " + musicData.GetCurrent().Timer + " => " + time);
-        
+    {        
         foreach (StateMachine s in musicData.GetCurrent().stateMachines)
         {
             s.SetOk();
@@ -207,7 +195,6 @@ public class GameController : MonoBehaviour
     {
         isPlaying = true;
         InitAnim();
-        Debug.Log("Launched");
     }
 
     private void InitAnim()
@@ -225,8 +212,6 @@ public class GameController : MonoBehaviour
 
         foreach (BeatData bd in beatDatas)
         {
-
-            Debug.Log("beat at : " + bd.GetNormalizedTimer() + " | here : " + (Time.timeSinceLevelLoad - startingTimer));
             foreach (StateMachine sm in bd.stateMachines)
             {
                 if (animationManager.InitClue(sm, bd.GetNormalizedTimer() - (Time.timeSinceLevelLoad - startingTimer), musicData.clueDuration))
@@ -246,7 +231,6 @@ public class GameController : MonoBehaviour
             if (ok)
             {
                 bd.HasBeenClued();
-                Debug.Log("BeatTime : " + (bd.GetNormalizedTimer() + startingTimer));
             }
                 
         }
