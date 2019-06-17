@@ -390,7 +390,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -413,6 +417,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10298}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1268,4 +1274,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/credits.unity
   - Assets/Scenes/score.unity
   playerPath: "C:/Users/J\xE9rome/Documents/UTC/GI02/SI28/projet/Rhythm_School_Project/si28/Rhythm
-    School/Builds/1.0.1/Rhythm School.exe"
+    School/Builds/1.0.2/Rhythm School.exe"
