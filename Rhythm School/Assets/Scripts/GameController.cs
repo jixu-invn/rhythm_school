@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public static GameController gameController;
 
     public AudioClip Clip;
+    public AudioClip hitsound;
 
     private PlayerController playerController;
     private AudioSource audioSource;
@@ -72,6 +73,9 @@ public class GameController : MonoBehaviour
     {
         bool ok = true;
         bool hit = false;
+
+        if(i.actionType == BeatInput.ActionType.Down)
+            AudioSource.PlayClipAtPoint(hitsound, transform.position, 0.65f);
 
         float offsettedTime = time - startingTimer;
 

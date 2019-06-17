@@ -10,6 +10,8 @@ public class OpeningScript : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         videoPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
     }
     

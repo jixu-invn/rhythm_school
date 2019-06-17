@@ -27,6 +27,7 @@ public class MusicData
     public BeatData Next()
     {
         current++;
+        if (GetCurrent().GetNormalizedTimer() == 0) current++;
         return GetCurrent();
     }
 

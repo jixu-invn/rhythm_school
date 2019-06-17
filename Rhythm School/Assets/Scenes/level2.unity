@@ -1586,6 +1586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1d022e05f429671499d67f7876dd3cc2, type: 3}
+  hitsound: {fileID: 8300000, guid: 6eb8ec67de15f51438890531b49383ad, type: 3}
 --- !u!114 &2067105711
 MonoBehaviour:
   m_ObjectHideFlags: 0

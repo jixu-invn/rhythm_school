@@ -7,6 +7,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(EmotionManager))]
 public class StoryController : MonoBehaviour
 {
+    public AudioClip typing1;
+    public AudioClip typing2;
+    public AudioClip typing3;
     public static StoryController storyController;
     private StoryData storyData;
     private AnimationManager animationManager;
@@ -16,7 +19,7 @@ public class StoryController : MonoBehaviour
     private float currentGrade;
     private float oldGrade;
     private string currentText = "";
-    public float delay = 0.05f;
+    public float delay = 0.02f;
     private bool talking = false;
     public Text textBox;
     public Text NameBox;
@@ -116,6 +119,9 @@ public class StoryController : MonoBehaviour
         talking = true;
         for(int i = 0; i < storyData.GetCurrent().Phrase.Length + 1; i++)
         {
+            if ((i % 3) == 0) AudioSource.PlayClipAtPoint(typing1, transform.position);
+            else if ((i%5) == 0) AudioSource.PlayClipAtPoint(typing2, transform.position);
+            else if ((i%7) == 0) AudioSource.PlayClipAtPoint(typing3, transform.position);
             currentText = storyData.GetCurrent().Phrase.Substring(0, i);
             textBox.text = currentText;
             yield return new WaitForSeconds(delay);

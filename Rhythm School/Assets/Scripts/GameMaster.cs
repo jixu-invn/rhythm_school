@@ -59,13 +59,6 @@ public class GameMaster : MonoBehaviour
 
     private void Update()
     {
-        if (currentScene.buildIndex == 0)
-        {
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                Launch();
-            }
-        }
     }
     
     private void NextScene()
