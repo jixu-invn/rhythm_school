@@ -23,6 +23,8 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -1274,4 +1276,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/credits.unity
   - Assets/Scenes/score.unity
   playerPath: "C:/Users/J\xE9rome/Documents/UTC/GI02/SI28/projet/Rhythm_School_Project/si28/Rhythm
-    School/Builds/1.0.2/Rhythm School.exe"
+    School/Builds/1.0.3/Rhythm School.exe"

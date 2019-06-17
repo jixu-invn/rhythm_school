@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
             SetClues();
             if (Time.timeSinceLevelLoad - startingTimer > Clip.length)
             {
-                playerController.End();
+                playerController.End(musicData);
             }
         }
         if (isPlaying)
