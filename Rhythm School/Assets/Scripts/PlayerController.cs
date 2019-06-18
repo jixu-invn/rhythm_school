@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     
     public void End(MusicData musicData)
     {
-        GameMaster.gameMaster.AddToGlobalScore(score / musicData.Beats.Length * 20);
+        GameMaster.gameMaster.AddToGlobalScore(((float)score)/((float)musicData.Beats.Length)*20);
         GameMaster.gameMaster.End();
     }
 }

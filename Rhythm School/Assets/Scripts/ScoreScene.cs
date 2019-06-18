@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 // UI.Text.text example
 //
@@ -14,15 +15,16 @@ public class ScoreScene : MonoBehaviour
     public Text score2;
     public Text score3;
 
-    void Awake()
+    private void Start()
     {
-      
+       score1.text = (String.Format("{0:00.00}/20", GameMaster.gameMaster.getScore(0)));
+       score2.text = (String.Format("{0:00.00}/20", GameMaster.gameMaster.getScore(1)));
+       score3.text = (String.Format("{0:00.00}/20", (GameMaster.gameMaster.getScore(0)+GameMaster.gameMaster.getScore(1))/2));
     }
 
-    void Update()
+    private void Update()
     {
-       score1.text = (GameMaster.gameMaster.getScore(0)/5) + "/20";
-       score2.text = (GameMaster.gameMaster.getScore(1)/5) + "/20";
-       score3.text = ((GameMaster.gameMaster.getScore(0)+GameMaster.gameMaster.getScore(1))/10) + "/20";
+        if (Input.GetKeyDown(KeyCode.Space))
+            GameMaster.gameMaster.End();
     }
 }

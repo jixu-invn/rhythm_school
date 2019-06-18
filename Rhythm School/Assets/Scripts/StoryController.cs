@@ -46,20 +46,20 @@ public class StoryController : MonoBehaviour
         currentGrade = GameMaster.gameMaster.getCurrentGrade();
         oldGrade = GameMaster.gameMaster.getOldGrade();
        
-        if (oldGrade>=50){
+        if (oldGrade>=10){
             suffix = "OK";
         }
         else {
             suffix = "MEH";
         }
 
-        if (currentGrade >= 80){
+        if (currentGrade >= 15){
             suffix += "PER";
         }
-        else if(currentGrade>=50){
+        else if(currentGrade>=10){
             suffix += "OK";
         }
-        else if(currentGrade >= 20){
+        else if(currentGrade >= 4){
             suffix += "MEH";
         }
         else{
